@@ -1,8 +1,8 @@
 .header{
  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   height: 60px;
-  transition: min-height 0.3s;
   display:flex;
+  flex-wrap: wrap;
   flex-direction: column;
 
 }
@@ -18,10 +18,20 @@
 }
 
 .infocard{
+    align-items: center;
+    background-color: #f8f6f5;
+    border: 0 solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 
+     0 10px 10px -5px rgba(0,0,0,0.04);
     display: flex;
-    flex-direction: row;
+    flex-direction:  column;
+    flex-wrap:wrap;
+    margin: 0 auto 1rem;      /* keeps infocard in the center */
+    max-width: 1024px;
+    padding: 1rem;
+    width: 100%;
     text-align: left;
-
 }
 
  #profilePic{
@@ -38,10 +48,50 @@
  }
 
  .content{
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-     height: 100%;
+    background-color: #f8f6f5;
+    border: 0 solid;
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 
+     0 10px 10px -5px rgba(0,0,0,0.04);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:  column;
+    margin: 0 auto 1rem;      
+    max-width: 1024px;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    overflow: scroll;
 
+ }
+
+
+ .footer{
+     background: lightsteelblue;
+ }
+
+ .footer_innerbox{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copy1 socialk";
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+
+ }
+
+ .copyright{
+     grid-area: copy1;
+     text-align: left;
+ }
+
+ .sociallink{
+     grid-area: socialk;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
 
  }

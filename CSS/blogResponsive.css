@@ -1,9 +1,7 @@
     .container{
         display:grid;
-        width: 80vw;
-        height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 7fr 1fr;
+        grid-template-rows: 20% 75% 5%;
         border: 2px solid yellow;
         grid-template-areas: 
         "sd"
@@ -17,7 +15,6 @@
     .box{
 
         border: 1px solid red;
-        background: #F8FA9D;
         }
       
       .header{
@@ -32,6 +29,22 @@
       }
       .content{
         grid-area: main;
+      }
+
+
+      .header_inner{
+        display:grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo back";
+      }
+
+      .logo{
+        grid-area: logo;
+      }
+
+      .goback{
+        grid-area: back;
       }
 
 /* @media(max-width:450px){} */
