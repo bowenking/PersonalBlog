@@ -1,60 +1,29 @@
-* Mobile first */
-.container{
-    display:grid;
-    grid-template-columns: 899px;  /*just one column for mobile version */
-    grid-template-rows: repeat(4,200px);
-    border: 2px solid yellow;
-    /* Use grid-template-area to create a mobile layout where each named space occupies its own row */
-    grid-template-areas: 
-    "hd"
-    "sd"
-    "main"
-    "ft";
-  }
+.body{
+    margin: 0 auto;
+}
 
-  .box{
-      border: 1px solid red;
-      background: #F8FA9D;
-      }
+.footer_innerbox{
 
-    .nestedGrid{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        border: 3px solid green;
-    }
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copy1 socialk";
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
 
-    
-  
-    .header{
-      grid-area:hd;
-    }
-    .footer{
-      grid-area: ft;  
-    }
-    .sidebar{
-      grid-area: sd;
-    }
-    .content{
-      grid-area: main;
-    }
+ }
 
+ .copyright{
+     grid-area: copy1;
+     text-align: left;
+ }
 
- 
+ .sociallink{
+     grid-area: socialk;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
 
-  
-
-
-  /* If Screen Is Wide Enough */
-  @media(min-width:900px){
-  .container{
-        display:grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        border: 2px solid red;
-    }
-  }
+ }

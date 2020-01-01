@@ -1,0 +1,88 @@
+
+@media(max-width: 600px){
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;  
+        grid-template-rows:80px 1100px 550px 40px;
+        border: 2px solid yellow;
+        grid-template-areas: 
+        "hd"
+        "welcome"
+        "main"
+        "ft";
+        justify-content: center;
+      }
+    
+      .box{
+          border: 1px solid red;
+          background: #F8FA9D;
+          }        
+      
+        .header{
+          grid-area:hd;
+        }
+        .footer{
+          grid-area: ft;  
+        }
+
+        .content{
+          grid-area: main;
+          margin: 10px 50px 25px 50px;
+          display: flex;
+          flex-direction: column; 
+        }
+
+        .welcome{
+            grid-area: welcome;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 110px 1fr 1fr 1fr;
+            grid-template-areas: 
+            "intro"
+            "char1"
+            "char2"
+            "char3";
+            justify-content: center;
+            grid-gap: 5px;
+            margin: 10px 50px 10px 50px;
+
+        }
+
+
+        .char1, .char2, .char3{
+          padding: 20px 20px 0 20px;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .Info{
+          text-align: center;
+        }
+
+        .Pic{
+          height: 12em;
+          max-width: 100%;
+ 
+        }
+}
+
+
+ 
+
+  
+
+
+  /* If Screen Is Wide Enough */
+  @media(min-width:900px){
+  .container{
+        display:grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid red;
+    }
+  }
