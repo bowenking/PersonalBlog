@@ -1,22 +1,17 @@
 
-@media(max-width: 600px){
+@media(max-width: 500px){
     .container{
         display:grid;
         grid-template-columns: 1fr;  
-        grid-template-rows:80px 1100px 550px 40px;
-        border: 2px solid yellow;
+        grid-template-rows:80px 50px 1100px 500px 40px;
         grid-template-areas: 
         "hd"
+        "nav"
         "welcome"
         "main"
         "ft";
         justify-content: center;
-      }
-    
-      .box{
-          border: 1px solid red;
-          background: #F8FA9D;
-          }        
+      }      
       
         .header{
           grid-area:hd;
@@ -25,11 +20,31 @@
           grid-area: ft;  
         }
 
+        .nav{
+          grid-area: nav;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas: 
+          "home blog contact";
+          margin: 10px 30px 0 30px;
+        }
+
+        .home, .blog, .contact{
+          text-decoration: none;
+          padding: 10px;
+        }
+
+
         .content{
           grid-area: main;
-          margin: 10px 50px 25px 50px;
+          margin: 10px 30px 25px 30px;
           display: flex;
-          flex-direction: column; 
+          flex-direction: column;
+        }
+
+        .blog1, .blog2, .blog3{
+          padding-left: 8px;
         }
 
         .welcome{
@@ -44,14 +59,17 @@
             "char3";
             justify-content: center;
             grid-gap: 5px;
-            margin: 10px 50px 10px 50px;
+            margin: 0 30px 10px 30px;
+        }
 
+        .intro{
+          grid-area: intro;
+          padding-left: 10px;
         }
 
 
         .char1, .char2, .char3{
           padding: 20px 20px 0 20px;
-          background-color: white;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         }
@@ -63,8 +81,138 @@
         .Pic{
           height: 12em;
           max-width: 100%;
- 
         }
+
+        .header_inner{
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+
+        h2{
+          margin: 8px 0 0 0;
+        }
+
+        p{
+          margin: 8px 0 8px 0;
+        }
+
+        h3{
+          margin: 10px 0 10px 0;
+        }
+
+        h1{
+          font-size: 1.7em;
+        }
+
+
+}
+
+
+
+@media(min-width: 501px) and (max-width: 1023px){
+  .container{
+    display:grid;
+    grid-template-columns: 1fr;  
+    grid-template-rows:80px 50px 1100px 540px 40px;
+    grid-template-areas: 
+    "hd"
+    "nav"
+    "welcome"
+    "main"
+    "ft";
+    justify-content: center;
+  }
+
+  
+    .header{
+      grid-area:hd;
+    }
+    .footer{
+      grid-area: ft;  
+    }
+
+    .nav{
+      grid-area: nav;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "home blog contact";
+      margin: 10px 50px 0 50px;
+    }
+
+    .home, .blog, .contact{
+      text-decoration: none;
+      padding: 10px;
+    }
+
+
+    .content{
+      grid-area: main;
+      margin: 10px 50px 25px 50px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .blog1, .blog2, .blog3{
+      padding-left: 10px;
+    }
+
+    .welcome{
+        grid-area: welcome;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 1fr 1fr 1fr;
+        grid-template-areas: 
+        "intro"
+        "char1"
+        "char2"
+        "char3";
+        justify-content: center;
+        grid-gap: 10px;
+        margin: 0 50px 10px 50px;
+    }
+
+    .intro{
+      grid-area: intro;
+      padding-left: 10px;
+    }
+
+
+    .char1, .char2, .char3{
+      padding: 20px 20px 0 20px;
+      width: 350px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 0 auto 0 auto;
+
+    }
+
+    .Info{
+      text-align: center;
+    }
+
+    .Pic{
+      height: 12em;
+      max-width: 100%;
+    }
+
+    .header_inner{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    h2{
+      margin: 10px 0 10px 0;
+    }
+
+    p{
+      margin: 10px 0 10px 0;
+    }
+
+
+
 }
 
 
@@ -73,16 +221,125 @@
   
 
 
-  /* If Screen Is Wide Enough */
-  @media(min-width:900px){
+  @media(min-width:1024px){
   .container{
         display:grid;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 250px 600px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd"
-        "sd sd main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        border: 2px solid red;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 50px 460px 520px 40px;
+        grid-template-areas:
+        "hd"
+        "nav"
+        "welcome"
+        "main"
+        "ft"; 
+        
     }
+
+   
+  
+    .header{
+      grid-area:hd;
+    }
+    .footer{
+      grid-area: ft;  
+    }
+
+    .nav{
+      grid-area: nav;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin: 10px auto 0 auto;
+      width: 1024px;
+    }
+
+    .home, .blog, .contact{
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .welcome{
+      grid-area: welcome;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-template-rows: 110px 1fr; */
+      grid-template-areas: 
+      "intro intro intro"
+      "char1 char2 char3";
+      justify-content: center;
+      margin: 0 auto 20px auto;
+      width: 1024px;
+    }
+
+    .intro{
+      grid-area: intro;
+      padding-left: 10px;
+    }
+
+    .char1{
+      grid-area: char1;
+      margin: 0 5px 10px 10px;
+    }
+
+    .char2{
+      grid-area: char2;
+      margin: 0 5px 10px 5px;
+    }
+
+    .char3{
+      grid-area: char3;
+      margin: 0 10px 10px 5px;
+    }
+
+    .char1, .char2, .char3{
+      padding: 20px 20px 0 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    }
+
+    .Info{
+      text-align: center;
+    }
+
+    .Pic{
+      height: 12em;
+      max-width: 100%;
+    }
+
+    .content{
+      grid-area: main;
+      margin: 10px auto 25px auto;
+      width: 1024px;
+      display: flex;
+      flex-direction: column; 
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .blog1, .blog2, .blog3{
+      padding-left: 10px;
+    }
+
+    .view{
+      text-decoration: none;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+
+
+    .header_inner{
+      width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2{
+      margin: 18px 0 4px 0;
+    }
+
+
+
+
   }

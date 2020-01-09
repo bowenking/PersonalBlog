@@ -2,6 +2,80 @@
     margin: 0 auto;
 }
 
+/* colors and styles */
+
+.container{
+    
+    background-color: #c5c6c7;
+}
+
+.header, .footer{
+    background-color: #1f2833;
+    color: #66fcf1;
+}
+
+.welcome, .content{
+    background-color: #0b0c10;
+    border-radius: 0.5rem;       
+}
+
+.welcome, .content{
+    box-shadow: 5px 10px 5px #4D4646;
+}
+
+.nav{
+    border-radius: 0.5rem;
+    background-color: #0b0c10;
+    font-weight: bold;
+}
+
+
+p{
+    color: ivory;
+}
+
+h2{
+    color:#66fcf1;
+}
+
+h3{
+    color: #45a29e;
+}
+
+.welcome_title{
+    color:#66fcf1;
+}
+
+.blog1, .blog2, .blog3{
+    background-color: #1f2833;
+    border-radius: 0.5rem;
+}
+
+.char1, .char2, .char3{
+    background-color: #1f2833;
+    border-radius: 0.5rem;
+}
+
+a:link {
+    color: #66fcf1;
+  }
+
+  a:visited {
+    color:#c5c6c7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer_innerbox{
 
     display: grid;
@@ -17,6 +91,8 @@
  .copyright{
      grid-area: copy1;
      text-align: left;
+     color: #66fcf1;
+     font-weight: bold;
  }
 
  .sociallink{
@@ -25,5 +101,18 @@
      flex-direction: row;
      justify-content: flex-end;
      align-items: center;
+     text-decoration: none;
+     font-weight: bold;
 
+ }
+
+ .links, .trademark{
+     color:#66fcf1;
+ }
+
+
+
+
+ .home, .contact, .blog{
+     text-align: center;
  }
