@@ -178,6 +178,7 @@
     .intro{
       grid-area: intro;
       padding-left: 10px;
+      text-align: center;
     }
 
 

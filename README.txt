@@ -9,3 +9,6 @@ critics: https://study.com/articles/Become_a_Film_Critic_Education_and_Career_Ro
 
 
 blog:https://uxplanet.org/why-lorem-ipsum-is-the-word-we-dont-talk-about-anymore-22ee2a303f3c
+
+
+contact: https://ballmemes.com/i/guesswho-dont-care-toteor-nie-guess-who-dont-care-guess-7fed3ca848104ef6b0b527904a3083c2

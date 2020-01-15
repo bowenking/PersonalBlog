@@ -4,8 +4,7 @@
 
 /* colors and styles */
 
-.container{
-    
+.container{ 
     background-color: #c5c6c7;
 }
 
@@ -58,23 +57,20 @@ h3{
 
 a:link {
     color: #66fcf1;
-  }
+}
 
-  a:visited {
+a:visited {
     color:#c5c6c7;
-  }
+}
+
+a:hover {
+    color:#66fcf1;
+}
 
 
 
 
-
-
-
-
-
-
-
-
+/* footer will remain the same */
 
 .footer_innerbox{
 
@@ -91,7 +87,6 @@ a:link {
  .copyright{
      grid-area: copy1;
      text-align: left;
-     color: #66fcf1;
      font-weight: bold;
  }
 
@@ -109,8 +104,6 @@ a:link {
  .links, .trademark{
      color:#66fcf1;
  }
-
-
 
 
  .home, .contact, .blog{

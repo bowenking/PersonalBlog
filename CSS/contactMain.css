@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+
+.container{ 
+    background-color: #c5c6c7;
+}
+
+
+.header{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    height: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #1f2833;
+    color: #66fcf1;
+  }
+
+  .header_inner{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display:grid;
+          grid-template-columns: 90% 10%;
+          grid-template-rows: 1fr;
+          grid-template-areas: "logo back";
+  }
+  
+  .goback{
+      text-align: center;
+      justify-content: center;
+  }
+  
+  .button{
+      text-align: center;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      background-color: #0b0c10;
+
+  }
+  
+  .header_title{
+      text-align: left;
+  }
+
+
+.content{
+    border-radius: 0.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 
+     0 10px 10px -5px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    margin: 0.2rem auto 1rem;      
+    max-width: 1024px;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+    align-items: center;
+    background-color: #0b0c10;
+    box-shadow: 5px 10px 5px #4D4646;
+}
+
+#pic{
+    max-width: 100%;
+    height: auto;
+}
+
+h3{
+    margin: 10px 0 8px 0;
+    color: #66fcf1;
+}
+
+h1{
+    margin: 10px 0 10px 0;
+}
+
+ins{
+    color:#45a29e;
+}
+
+.subs{
+    border-radius: 0.5rem;
+    margin: 10px 0 5px 0;
+    font-weight: bolder;
+    color:#1f2833;
+    background-color: #c5c6c7;
+}
+
+.footer{
+    background-color: #1f2833;
+    color: #66fcf1;
+}
+
+.footer_innerbox{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "copy1 socialk";
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+
+ }
+
+
+
+ .copyright{
+     grid-area: copy1;
+     text-align: left;
+     font-weight: bold;
+ }
+
+ .sociallink{
+     grid-area: socialk;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     text-decoration: none;
+     font-weight: bold;
+
+ }
+
+ a:link {
+    color: #66fcf1;
+}
+
+a:visited {
+    color: #66fcf1;
+}
+
+a:hover {
+    color:#66fcf1;
+}
