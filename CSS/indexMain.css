@@ -1,3 +1,7 @@
+@import "indexResponsive.css";
+@import "blogMain.css";
+@import "blogResponsive.css";
+
 .body{
     margin: 0 auto;
 }

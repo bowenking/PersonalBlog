@@ -110,6 +110,15 @@ button{
 
  }
 
+ figure{
+     margin: 0 15px 0 15px;
+     text-align: center;
+ }
+
+ figcaption{
+     text-align: center;
+ }
+
  h1{
      margin: 12px 0 12px 0;
  }
@@ -117,11 +126,7 @@ button{
      margin: 10px 0 10px 0;
  }
 
- .contentPic1{
-     width:100%;
-     max-width: 100%;
-     height: auto;
- }
+
 
  .content_p{
     margin: 4px 0 4px 0;
